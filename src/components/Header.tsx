@@ -1,4 +1,5 @@
 import Menu from "./Menu";
+import Navigation from "./Navigation";
 import { useState, useEffect } from "react";
 import { PiX, PiInstagramLogo } from "react-icons/pi";
 import { IoIosMenu } from "react-icons/io";
@@ -28,9 +29,7 @@ const Header = () => {
 
       {/* Desktop View */}
       <div className="hidden md:flex gap-3 items-center justify-center">
-        <div>Gallery</div>
-        <div>About</div>
-        <div>Home</div>
+        <Navigation />
         <div className="flex gap-2 items-center justify-center">
           <PiInstagramLogo size={20} />
           <MdOutlineMail size={20} />
