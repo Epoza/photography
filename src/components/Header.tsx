@@ -45,7 +45,7 @@ const Header = () => {
       </button>
 
       {/* Mobile Dropdown Menu */}
-      {menuOpen && <Menu />}
+      {menuOpen && <Menu closeMenu={() => setMenuOpen(false)} />}
     </div>
   );
 };
