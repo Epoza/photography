@@ -1,7 +1,9 @@
 const About = () => {
   return (
     <>
-      <div>About section</div>
+      <div className="bg-blue-900 h-[calc(100vh-4.5rem)]">
+        <div>About Section</div>
+      </div>
     </>
   );
 };
