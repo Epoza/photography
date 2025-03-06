@@ -31,8 +31,12 @@ const Header = () => {
       <div className="hidden md:flex gap-3 items-center justify-center">
         <Navigation />
         <div className="flex gap-2 items-center justify-center">
-          <PiInstagramLogo size={20} />
-          <MdOutlineMail size={20} />
+          <a href="https://instagram.com">
+            <PiInstagramLogo size={20} />
+          </a>
+          <a href="mailto:">
+            <MdOutlineMail size={20} />
+          </a>
         </div>
       </div>
 
