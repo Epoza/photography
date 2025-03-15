@@ -4,22 +4,22 @@ const Gallery = () => {
   const location = useLocation();
 
   return (
-    <div className="w-full h-[calc(100vh-4.5rem)] bg-soft-cream">
+    <div className="w-full h-full bg-soft-cream">
       {/* Show buttons ONLY if on /gallery */}
       {location.pathname === "/gallery" && (
         // grid container
         <div
           id="container"
-          className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 p-4"
+          className="min-h-[calc(100vh-4.5rem)] w-full grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-min gap-4 p-4 justify-start"
         >
           <Link
             to="/gallery/animals"
-            className="w-[300px] h-[400px] flex flex-col items-center border-2 border-dark-coffee rounded-lg overflow-hidden transition hover:border-light-oat"
+            className="max-w-[300px] max-h-[300px] flex flex-col items-center border-2 border-dark-coffee rounded-lg overflow-hidden transition hover:border-medium-latte hover:opacity-80"
           >
             <img
-              src="/src/assets/images/animals/preview.jpg"
+              src="/src/assets/images/animals/DSC_2295.JPG"
               alt="Animal Gallery"
-              className="w-full h-48 object-cover"
+              className="w-full h-[250px] object-cover"
             />
             <p className="w-full p-4 text-center bg-light-oat text-dark-coffee">
               Animal Images
@@ -28,7 +28,7 @@ const Gallery = () => {
 
           <Link
             to="/gallery/landscapes"
-            className="w-[300px] h-[300px] flex flex-col items-center border-2 border-dark-coffee rounded-lg overflow-hidden transition hover:border-medium-latte hover:opacity-80"
+            className="max-w-[300px] max-h-[300px] flex flex-col items-center border-2 border-dark-coffee rounded-lg overflow-hidden transition hover:border-medium-latte hover:opacity-80"
           >
             <img
               src="/src/assets/images/landscapes/DSC_3591.JPG"
