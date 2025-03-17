@@ -17,9 +17,9 @@ const Gallery = () => {
             className="max-w-[300px] max-h-[300px] flex flex-col items-center border-2 border-dark-coffee rounded-lg overflow-hidden transition hover:border-medium-latte hover:opacity-80"
           >
             <img
-              src="/src/assets/images/animals/DSC_2295.JPG"
+              src="/src/assets/images/animals/DSC_0302.thumb.jpg"
               alt="Animal Gallery"
-              className="w-full h-[250px] object-cover"
+              className="w-full h-[240px] object-cover"
             />
             <p className="w-full p-4 text-center bg-light-oat text-dark-coffee">
               Animal Images
@@ -31,10 +31,11 @@ const Gallery = () => {
             className="max-w-[300px] max-h-[300px] flex flex-col items-center border-2 border-dark-coffee rounded-lg overflow-hidden transition hover:border-medium-latte hover:opacity-80"
           >
             <img
-              src="/src/assets/images/landscapes/DSC_3591.JPG"
+              src="/src/assets/images/landscapes/DSC_4580.JPG"
               // change alt tag
               alt="Landscape Gallery"
-              className="w-full h-[250px] object-cover"
+              // image has max width of 240px
+              className="w-full h-[240px] object-cover"
             />
             <p className="w-full p-4 text-center bg-light-oat text-dark-coffee">
               Landscape Images
