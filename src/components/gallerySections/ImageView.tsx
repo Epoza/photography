@@ -38,19 +38,19 @@ const ImageView = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-soft-cream">
+    <div className="flex flex-col md:flex-row min-h-screen items-center bg-soft-cream w-full max-w-screen">
       {/* Image Section */}
-      <div className="w-1/2 p-4 flex justify-center items-center">
+      <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
         <img
           src={image}
           alt="Image"
-          className="max-w-full max-h-screen rounded-lg shadow-lg"
+          className="w-full max-h-screen rounded-lg shadow-lg"
         />
       </div>
 
       {/* Email Section */}
-      <div className="w-1/2 p-4 flex flex-col justify-center">
-        <h2 className="text-xl font-semibold text-dark-coffee">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-8">
+        <h2 className="text-xl font-semibold text-dark-coffee text-center md:text-left">
           Interested in this image?
         </h2>
         <form onSubmit={sendEmail} className="mt-4">
