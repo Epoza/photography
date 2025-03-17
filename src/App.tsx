@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery";
 import About from "./components/About";
 import Animals from "./components/gallerySections/Animals";
 import Landscapes from "./components/gallerySections/Landscapes";
+import ImageView from "./components/gallerySections/ImageView";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             {/* Nested routes */}
             <Route path="animals" element={<Animals />} />
             <Route path="landscapes" element={<Landscapes />} />
+            <Route path="/gallery/image/:id" element={<ImageView />} />
           </Route>
           <Route path="/about" element={<About />} />
         </Routes>
