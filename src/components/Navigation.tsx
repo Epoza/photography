@@ -24,6 +24,7 @@ const Navigation = ({ className, onClick }: NavigationProps) => {
       {[
         { id: "home-link", path: "/", label: "Home" },
         { id: "gallery-link", path: "/gallery", label: "Gallery" },
+        { id: "pricing-link", path: "/pricing", label: "Pricing" },
         { id: "about-link", path: "/about", label: "About" },
       ].map(({ id, path, label }) => (
         <Link
@@ -32,14 +33,14 @@ const Navigation = ({ className, onClick }: NavigationProps) => {
           to={path}
           onClick={() => handleClick(path)}
           className={`relative px-1 pb-1 transition-colors duration-600 ${
-            activeLink == path ? "text-red-600" : "hover:text-red-600"
+            activeLink == path ? "text-dark-coffee" : "hover:text-medium-latte"
           } ${className}`}
         >
           {label}
 
           {/* Expanding Bottom Border */}
           <span
-            className={`absolute bottom-0 left-0 h-[3px] bg-red-500 transition-all duration-300 ${
+            className={`absolute bottom-0 left-0 h-[3px] bg-medium-latte transition-all duration-300 ${
               activeLink == path ? "w-full" : "w-0 hover:w-full"
             }`}
           />
