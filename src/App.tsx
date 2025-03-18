@@ -7,6 +7,7 @@ import About from "./components/About";
 import Animals from "./components/gallerySections/Animals";
 import Landscapes from "./components/gallerySections/Landscapes";
 import ImageView from "./components/gallerySections/ImageView";
+import Pricing from "./components/Pricing";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="landscapes" element={<Landscapes />} />
             <Route path="/gallery/image/:id" element={<ImageView />} />
           </Route>
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>
