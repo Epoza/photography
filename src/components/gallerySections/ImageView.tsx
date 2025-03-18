@@ -1,6 +1,7 @@
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Button from "../Button";
 
 const ImageView = () => {
   const location = useLocation();
@@ -30,6 +31,10 @@ const ImageView = () => {
       )
       .then(() => {
         alert("Email sent successfully!");
+        // **Clear the form after successful submission**
+        setUserName("");
+        setUserEmail("");
+        setMessage("");
       })
       .catch((error) => {
         alert("Failed to send email.");
@@ -93,15 +98,21 @@ const ImageView = () => {
           >
             Send Email
           </button>
+          <Button
+            buttonText="See Pricing"
+            location="/pricing"
+            containDiv={false}
+            customCSS="ml-4 inline-block px-4 py-2 mb-4 text-dark-coffee border border-dark-coffee rounded-lg transition hover:bg-medium-latte hover:text-white"
+          />
         </form>
 
         {/* Back to Gallery Button */}
-        <Link
-          to="/gallery"
-          className="mt-4 inline-block text-dark-coffee hover:underline"
-        >
-          ← Back to Gallery
-        </Link>
+        <Button
+          buttonText="← Back to Gallery"
+          location="/gallery"
+          containDiv={false}
+          customCSS="mt-4 inline-block text-dark-coffee hover:underline"
+        />
       </div>
     </div>
   );
