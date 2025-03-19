@@ -2,12 +2,10 @@ import { Link } from "react-router-dom";
 import Button from "../Button";
 
 interface GalleryProps {
-  imagePaths: Record<string, () => Promise<unknown>>;
+  imagePaths: string[]; // Direct array of image URLs
 }
 
 const GalleryTemplate = ({ imagePaths }: GalleryProps) => {
-  const images = Object.keys(imagePaths);
-
   return (
     <>
       <Button
@@ -16,7 +14,7 @@ const GalleryTemplate = ({ imagePaths }: GalleryProps) => {
         containDiv={true}
       />
       <div className="2xl:columns-3 md:columns-2 columns-1 gap-4 p-4">
-        {images.map((image, index) => (
+        {imagePaths.map((image, index) => (
           <div key={index} className="overflow-hidden shadow-lg mb-4">
             <Link to={`/gallery/image/${index}`} state={{ image }}>
               <img
