@@ -12,13 +12,13 @@ import Pricing from "./components/Pricing";
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename="/photography">
         {/* Put components here such as Navbar, footer, homepage, etc.*/}
         {/* Possible move header into each component home, gallery, About */}
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/gallery" element={<Gallery />}>
             {/* Nested routes */}
             <Route path="animals" element={<Animals />} />
