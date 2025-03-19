@@ -46,11 +46,13 @@ const ImageView = () => {
     <div className="flex flex-col md:flex-row min-h-screen items-center bg-soft-cream w-full max-w-screen">
       {/* Image Section */}
       <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
-        <img
-          src={image}
-          alt="Image"
-          className="w-full max-h-screen rounded-lg shadow-lg"
-        />
+        <div>
+          <img
+            src={image}
+            alt="Image"
+            className="w-full max-h-screen object-contain rounded-lg shadow-lg"
+          />
+        </div>
       </div>
 
       {/* Email Section */}
