@@ -22,7 +22,7 @@ const Navigation = ({ className, onClick }: NavigationProps) => {
   return (
     <>
       {[
-        { id: "home-link", path: "/", label: "Home" },
+        { id: "home-link", path: "/home", label: "Home" },
         { id: "gallery-link", path: "/gallery", label: "Gallery" },
         { id: "pricing-link", path: "/pricing", label: "Pricing" },
         { id: "about-link", path: "/about", label: "About" },

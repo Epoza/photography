@@ -16,7 +16,7 @@ const Pricing = () => {
         />
         <img
           className="mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-[1100px]"
-          src="/images/PHOTO PRICES.jpg"
+          src={`${import.meta.env.BASE_URL}/images/PHOTO PRICES.jpg`}
           alt="Pricing"
         />
       </div>
