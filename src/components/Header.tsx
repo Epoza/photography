@@ -21,20 +21,23 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-between items-center bg-amber-600 border-2 border-red-500 h-18 p-4 relative">
+    <div className="w-full flex justify-between items-center bg-light-oat h-18 p-4 relative">
       {/* Website Name */}
-      <div className="text-2xl flex items-center gap-2" id="website-name">
-        <span>{/* Icon here */}</span>Website Name
+      <div
+        className="text-2xl font-semibold flex items-center gap-2"
+        id="website-name"
+      >
+        <span>{/* Icon here */}</span>Photo.Repeat
       </div>
 
       {/* Desktop View */}
       <div className="hidden md:flex gap-3 items-center justify-center">
         <Navigation />
         <div className="flex gap-2 items-center justify-center">
-          <a href="https://instagram.com">
+          <a href="https://instagram.com/Photo.Repeat/">
             <PiInstagramLogo size={20} />
           </a>
-          <a href="mailto:">
+          <a href="mailto:malarie1012@gmail.com">
             <MdOutlineMail size={20} />
           </a>
         </div>
