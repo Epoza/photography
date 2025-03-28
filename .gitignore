@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+public/images/animals(old)
+public/images/landscapes(old)
