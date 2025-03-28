@@ -17,7 +17,7 @@ const Gallery = () => {
             className="max-w-[300px] max-h-[300px] flex flex-col items-center border-2 border-dark-coffee rounded-lg overflow-hidden transition hover:border-medium-latte hover:opacity-80"
           >
             <img
-              src={`${import.meta.env.BASE_URL}/images/animals/DSC_0302.JPG`}
+              src={`${import.meta.env.BASE_URL}/images/animals/DSC_0303.JPG`}
               alt="Animal Gallery"
               className="w-full h-[240px] object-cover"
             />
