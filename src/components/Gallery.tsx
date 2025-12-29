@@ -1,4 +1,4 @@
-import { Link, useLocation, Outlet } from "react-router-dom";
+import { useLocation, Outlet } from "react-router-dom";
 import animalImage from "../images/birds/DSC_4120.JPG";
 import littleImage from "../images/little_guys/DSC_0281.JPG";
 import bigImage from "../images/big_boys/DSC_4710.JPG";
